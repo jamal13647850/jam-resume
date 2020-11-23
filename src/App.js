@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Switch , Route} from "react-router-dom";
 
-//import Layout from "./hoc/Layout/Layout";
-//import Intro from "./containers/Intro/Intro";
+import Layout from "./hoc/Layout/Layout";
+import Intro from "./containers/Intro/Intro";
 //import Portfolio from "./containers/Portfolio/Portfolio";
 //import AboutMe from "./containers/AboutMe/AboutMe";
 //import Contact from "./containers/Contact/Contact";
