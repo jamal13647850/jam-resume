@@ -1,9 +1,9 @@
-//@import 'libs/vars';
-//@import 'libs/functions';
-//@import 'libs/mixins';
-//@import 'libs/vendor';
-//@import 'libs/breakpoints';
-//@import 'libs/html-grid';
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 
@@ -88,6 +88,9 @@ input, select, textarea {
 }
 
 /* Basic */
+
+// Set box model to border-box.
+// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
 html {
   box-sizing: border-box;
 }
@@ -464,7 +467,7 @@ table {
     text-align: left;
     padding: 0.5em 1em 0.5em 1em;
     color: #fff;
-    background: #222729 url('/images/overlay.png');
+    background: #222729 url('images/overlay.png');
   }
 
   thead {
@@ -493,7 +496,7 @@ button,
   background-color: #e27689;
   border: 0;
   cursor: pointer;
-  @include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("images/overlay.png")'));
+  @include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("../images/overlay.png")'));
   @include vendor('transition', 'background-color 0.35s ease-in-out');
 
   &:hover {
