@@ -3,7 +3,7 @@ import {Switch , Route} from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
 import Intro from "./containers/Intro/Intro";
-//import Portfolio from "./containers/Portfolio/Portfolio";
+import Portfolio from "./containers/Portfolio/Portfolio";
 //import AboutMe from "./containers/AboutMe/AboutMe";
 //import Contact from "./containers/Contact/Contact";
 
@@ -19,8 +19,8 @@ class App extends Component {
              <Layout>
                <Switch>
                  <Route exact path="/" component={Intro}/>
-                 {/* <Route path="/portfolio" component={Portfolio}/>
-                 <Route path="/about" component={AboutMe}/>
+                 <Route path="/portfolio" component={Portfolio}/>
+                 {/*<Route path="/about" component={AboutMe}/>
                  <Route path="/contact" component={Contact}/> */}
                </Switch>
              </Layout>

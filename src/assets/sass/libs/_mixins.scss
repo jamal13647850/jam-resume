@@ -60,3 +60,31 @@
 	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
 
 }
+
+@function makeAnimate($name,$duration,$delay:1s,$timing:ease-in-out,$iteration:infinite,){
+	@return $name $duration $timing $delay $iteration;
+}
+@mixin inline-animation($name) {
+	
+	@keyframes #{$name} {
+	  @content;
+	}	
+	
+  }
+
+@mixin multiple_animations($list) {
+	$combined: '';
+
+	@for $i from 1 through length($list) {
+		$anim: nth($list, $i);
+
+		@if $i == length($list) {
+			$combined: $combined + $anim;
+		}
+		@else {
+			$combined: $combined + $anim + ',';
+		}
+	}
+
+	animation: unquote($combined);
+}

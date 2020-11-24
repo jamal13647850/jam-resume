@@ -157,14 +157,52 @@ h3 {
   font-size: 1.5em;
 }
 
+
+$animations:(
+  makeAnimate(anim1,5s,1s),
+  makeAnimate(anim2,2s,1s,ease,1),
+);
+@include inline-animation(anim1) {
+      
+  from {
+    color: white;
+    -webkit-text-stroke: 2px #000000;
+  }
+  to {
+    color: yellow;
+    -webkit-text-stroke: 2px #1db82a;
+  }
+}
+
+@include inline-animation(anim2) {
+      
+  0% {
+    margin-left:-150vw ;
+  }
+  90% {
+    margin-left:50px ;
+  }
+  100% {
+    margin-left:0 ;
+  }
+}
+
 header {
   margin: 0 0 2em 0;
 
   > p {
     margin: 1em 0 0 0;
-    color: lime;
+    color: white;
+    font-size: 1.3em;
+    -webkit-text-stroke: 2px #000000;
+    @include multiple_animations($animations)
+
+   
+
   }
 }
+
+
 
 footer {
   margin: 2em 0 0 0;
