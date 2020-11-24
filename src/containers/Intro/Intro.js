@@ -9,7 +9,7 @@ class Intro extends Component {
 
                     <header>
                         <h2 className="alt">Hi! I'm <strong>Sayyed Jamal Ghasemi</strong>, a Full Stack Developer<br />
-                        Created it resume tamplate<strong>By reactjs</strong> </h2>
+                        Created it resume tamplate <strong>By reactjs</strong> </h2>
                         <p>I have been interested in programming since I was a child</p>
                     </header>
 

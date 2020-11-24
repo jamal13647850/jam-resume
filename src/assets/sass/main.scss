@@ -162,6 +162,7 @@ header {
 
   > p {
     margin: 1em 0 0 0;
+    color: lime;
   }
 }
 
@@ -308,6 +309,8 @@ section, article {
     img {
       width: 48px;
       height: 48px;
+      border-radius: 25px;
+      border: 3px solid rgb(129, 122, 122);
     }
   }
 
@@ -378,6 +381,19 @@ ul.icons {
     text-align: center;
     border: 0;
   }
+}
+
+.fa-linkedin {
+  color: #0E66C2;
+}
+.fa-telegram {
+  color: #32AADE;
+}
+.fa-instagram{
+  color: #B234AD;
+}
+.fa-twitter {
+  color:#50ABF1;
 }
 
 /* Form */
