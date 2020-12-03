@@ -15,7 +15,7 @@ class Portfolio extends Component {
                 <div className="container">
 
                     <header>
-                        <h2>Portfolio</h2>
+                        <h2>test budy</h2>
                     </header>
 
                     <p>
