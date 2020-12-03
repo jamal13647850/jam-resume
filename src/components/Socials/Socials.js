@@ -7,7 +7,7 @@ const socials = (props) => {
     const {link , icon, title} = props;
     return (
             <li>
-                <a target="_blank" href={link} className="icon">
+                <a target="_blank" href={link} className="icon" rel="noreferrer"y>
                     <FontAwesomeIcon icon={icon} size="2x"/>
                     <span className="label">{title}</span>
                 </a>
